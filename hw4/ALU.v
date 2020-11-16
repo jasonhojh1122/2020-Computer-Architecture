@@ -36,7 +36,7 @@ always@(*) begin
         3'b110:
             result = data1_i + data2_i;
         3'b111:
-            result = data1_i >>> data2_i;
+            result = data1_i >>> data2_i[4:0];
         default:
             result = data1_i + data2_i;
     endcase
