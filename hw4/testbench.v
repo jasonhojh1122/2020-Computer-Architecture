@@ -42,6 +42,9 @@ initial begin
     #(`CYCLE_TIME/4) 
     Reset = 0;
     Start = 1;
+
+    $dumpfile("CPU.vcd");
+    $dumpvars;
         
     
 end

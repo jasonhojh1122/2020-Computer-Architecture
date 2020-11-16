@@ -26,7 +26,7 @@ always@(*) begin
         3'b001:
             result = data1_i ^ data2_i;
         3'b010:
-            result = data1_i >> data2_i;
+            result = data1_i << data2_i;
         3'b011:
             result = data1_i + data2_i;
         3'b100:
@@ -36,7 +36,7 @@ always@(*) begin
         3'b110:
             result = data1_i + data2_i;
         3'b111:
-            result = data1_i << data2_i;
+            result = data1_i >>> data2_i;
         default:
             result = data1_i + data2_i;
     endcase
