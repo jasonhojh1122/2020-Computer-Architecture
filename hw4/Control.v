@@ -32,6 +32,7 @@ always@(*) begin
             ALUOp_reg   = 2'b00;
             ALUSrc_reg  = 0;
         end
+    endcase
 end
 
 endmodule

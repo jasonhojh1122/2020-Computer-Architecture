@@ -30,13 +30,17 @@ always@(*) begin
                         7'b0000000: ALUCtrl_reg = 3'b011; // add
                         7'b0100000: ALUCtrl_reg = 3'b100; // sub
                         7'b0000001: ALUCtrl_reg = 3'b101; // mul
+                    endcase
                 end
+            endcase
         end
         2'b01: begin // addi srai
             case (funct3)
                 3'b000: ALUCtrl_reg = 3'b110; // addi
                 3'b101: ALUCtrl_reg = 3'b111; // srai
+            endcase
         end
         default: ALUCtrl_reg = 3'b000;
+    endcase
 end
 endmodule
