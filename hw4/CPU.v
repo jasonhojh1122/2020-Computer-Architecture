@@ -27,12 +27,12 @@ wire    [4:0]   RD_addr;
 wire    [6:0]   Opcode;
 wire    [11:0]  Imm;
 wire    [9:0]   Funct;
-assign RS1_addr     = Instruction[19:15];
-assign RS2_addr     = Instruction[24:20];
-assign RD_addr      = Instruction[11:7];
-assign Opcode       = Instruction[6:0];
-assign Imm          = Instruction[31:20];
-assign Funct        = {Instruction[31:25], Instruction[14:12]};
+assign  RS1_addr    = Instruction[19:15];
+assign  RS2_addr    = Instruction[24:20];
+assign  RD_addr     = Instruction[11:7];
+assign  Opcode      = Instruction[6:0];
+assign  Imm         = Instruction[31:20];
+assign  Funct       = {Instruction[31:25], Instruction[14:12]};
 
 // Register Data
 wire    [31:0]  RS1_data;

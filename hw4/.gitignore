@@ -1,5 +1,7 @@
 *.vcd
 *.out
 *.txt
+*.docx
+~*
 !instruction.txt
 !output.txt
