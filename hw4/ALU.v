@@ -7,14 +7,14 @@ module ALU
     Zero_o
 );
 
-input   [31:0]      data1_i;
-input   [31:0]      data2_i;
-input   [2:0]       ALUCtrl_i;
-output  [31:0]      data_o;
-output              Zero_o;
+input signed    [31:0]      data1_i;
+input           [31:0]      data2_i;
+input           [2:0]       ALUCtrl_i;
+output          [31:0]      data_o;
+output                      Zero_o;
 
-reg [31:0]  result;
-reg         Zero_reg;
+reg signed [31:0]   result;
+reg                 Zero_reg;
 
 assign data_o = result;
 assign Zero_o = Zero_reg;
